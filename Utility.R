@@ -327,11 +327,10 @@ main <- function(team,range_start_str,range_end_str,file_name){
 }
 
 merge_data <- function(actual_file,file_name){
-  print("Merging data to main file")
   country_model <- NULL
   if(file.exists(actual_file)){
     file_data <- read.csv(file_name)
-    country_model <- read.csv(actual_file)
+    country_model <- read.csv(actual_file)[,-1] #omitting unsued index : error number of columns of arguments do not match
     country_model <- rbind(country_model,file_data)
   }else{
     file_data <- read.csv(file_name)
@@ -342,30 +341,39 @@ merge_data <- function(actual_file,file_name){
   # if(file.exists(file_name)) {file.remove(file_name)}
 }
 
-for (i in 1:5){
-  curr_date = Sys.Date() ### yyyy-mm-dd
-  range_start <- Sys.Date() - 365*(i-1)
-  range_start_year <- strsplit(as.character(range_start),"-")[[1]][1]
-  range_start_str <- paste(strsplit(as.character(range_start),"-")[[1]][3],paste(month.abb[as.numeric(strsplit(as.character(range_start),"-")[[1]][2])],strsplit(as.character(range_start),"-")[[1]][1],sep = "+"),sep = "+")
-  range_end <- Sys.Date() - 356*(i)
-  range_end_str <- paste(strsplit(as.character(range_end),"-")[[1]][3],paste(month.abb[as.numeric(strsplit(as.character(range_end),"-")[[1]][2])],strsplit(as.character(range_end),"-")[[1]][1],sep = "+"),sep = "+")
-  range_end_year <- strsplit(as.character(range_end),"-")[[1]][1]
-  file_name <- paste(paste(range_start_year,range_end_year,sep = "_"),".csv",sep = "")
-  #print(paste(range_start_str,range_end_str,sep = "----"))
-  #print(file_name)
-  actual_file <- paste("India","csv",sep = ".")
-  if(file.exists(file_name)) {
-    print(paste(file_name," already exists. Merging and skipping..."))
-    merge_data(actual_file,file_name)
-    next
+
+
+scrap <- function(country_name){
+  actual_file <- paste(country_name,"csv",sep = ".")
+  if(file.exists(actual_file)){
+    print("destroying existing file. Creating fresh Copy")
+    file.remove(actual_file)
   }
-  print(paste("creating file: ",file_name,sep = ""))
-  main("India",range_start_str,range_end_str,file_name)
-  merge_data(actual_file,file_name)
-  
+  for (i in 1:5){
+    curr_date = Sys.Date() ### yyyy-mm-dd
+    range_start <- Sys.Date() - 365*(i-1)
+    range_start_year <- strsplit(as.character(range_start),"-")[[1]][1]
+    range_start_str <- paste(strsplit(as.character(range_start),"-")[[1]][3],paste(month.abb[as.numeric(strsplit(as.character(range_start),"-")[[1]][2])],strsplit(as.character(range_start),"-")[[1]][1],sep = "+"),sep = "+")
+    range_end <- Sys.Date() - 356*(i)
+    range_end_str <- paste(strsplit(as.character(range_end),"-")[[1]][3],paste(month.abb[as.numeric(strsplit(as.character(range_end),"-")[[1]][2])],strsplit(as.character(range_end),"-")[[1]][1],sep = "+"),sep = "+")
+    range_end_year <- strsplit(as.character(range_end),"-")[[1]][1]
+    file_name <- paste(paste(range_start_year,range_end_year,sep = "_"),".csv",sep = "")
+    #print(paste(range_start_str,range_end_str,sep = "----"))
+    #print(file_name)
+   
+    if(file.exists(file_name)) {
+      print(paste(file_name," already exists. Merging and skipping..."))
+      merge_data(actual_file,file_name)
+      next
+    }
+    print(paste("creating file: ",file_name,sep = ""))
+    main(country_name,range_start_str,range_end_str,file_name)
+    merge_data(actual_file,file_name)
+    
+  }
 }
 
-
+scrap("India")
 #main("India")
 
 #merging all the data
