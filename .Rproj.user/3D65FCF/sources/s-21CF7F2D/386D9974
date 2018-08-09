@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533826696987.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "386D9974",
+    "lastKnownWriteTime" : 1533826933,
+    "last_content_update" : 1533826933982,
+    "path" : "~/Desktop/Data science/projects/wasp_main/Utility.R",
+    "project_path" : "Utility.R",
+    "properties" : {
+        "cursorPosition" : "368,0",
+        "scrollLine" : "344"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
