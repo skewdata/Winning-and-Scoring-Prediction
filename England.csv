@@ -1,0 +1,81 @@
+"","X","odi_id","date","oppositon","ground","innings","score","result","toss_result","strategy","match_timing","home_ground","total_batsmen","total_bowlers","total_allrounders","bat_bowl_avg.batting_avg","bat_bowl_avg.bowling_avg"
+"1",1,"ODI # 3911","19 Sep 2017","West Indies","Manchester",2,"210/3","won","Lost","Field","D/N","TRUE",5,3,3,41.2,22.3333333333333
+"2",2,"ODI # 3913","21 Sep 2017","West Indies","Nottingham",1,"21/0","n/r","Lost","Bat","D/N","TRUE",5,3,3,9.5,0
+"3",3,"ODI # 3915","24 Sep 2017","West Indies","Bristol",1,"369/9","won","Lost","Bat","D/N","TRUE",5,3,3,33,26.8888888888889
+"4",4,"ODI # 3916","27 Sep 2017","West Indies","The Oval",2,"258/5","won","Won","Field","D/N","TRUE",6,4,1,35.5714285714286,70.6
+"5",5,"ODI # 3918","29 Sep 2017","West Indies","Southampton",2,"294/1","won","Won","Field","D/N","TRUE",6,3,2,94.3333333333333,48
+"6",6,"ODI # 3951","14 Jan 2018","Australia","Melbourne",2,"308/5","won","Won","Field","D/N","FALSE",6,4,1,42.7142857142857,37.125
+"7",7,"ODI # 3958","19 Jan 2018","Australia","Brisbane",2,"274/6","won","Lost","Field","D/N","FALSE",6,4,1,33.5,38.2857142857143
+"8",8,"ODI # 3960","21 Jan 2018","Australia","Sydney",1,"302/6","won","Lost","Bat","D/N","FALSE",6,4,1,35.75,46.1666666666667
+"9",9,"ODI # 3966","26 Jan 2018","Australia","Adelaide",1,"196","lost","Lost","Bat","D/N","FALSE",6,3,2,17.3636363636364,32.8333333333333
+"10",10,"ODI # 3968","28 Jan 2018","Australia","Perth",1,"259","won","Lost","Bat","D/N","FALSE",6,2,3,22.2727272727273,26.6666666666667
+"11",11,"ODI # 3980","25 Feb 2018","New Zealand","Hamilton",1,"284/8","lost","Lost","Bat","D/N","FALSE",5,2,4,27.3,40.2857142857143
+"12",12,"ODI # 3981","28 Feb 2018","New Zealand","Mount Maunganui",2,"225/4","won","Won","Field","D/N","FALSE",5,2,4,35.8333333333333,36.3333333333333
+"13",13,"ODI # 3982","3 Mar 2018","New Zealand","Wellington",1,"234","won","Lost","Bat","D/N","FALSE",5,3,3,20.2727272727273,32.7142857142857
+"14",14,"ODI # 3989","7 Mar 2018","New Zealand","Dunedin",1,"335/9","lost","Lost","Bat","D/N","FALSE",5,3,3,30,67
+"15",15,"ODI # 3992","10 Mar 2018","New Zealand","Christchurch",2,"229/3","won","Won","Field","D/N","FALSE",5,3,3,44.4,22.3
+"16",16,"ODI # 4008","10 Jun 2018","Scotland","Edinburgh",2,"365","lost","Won","Field","D/N","FALSE",6,3,2,32.5454545454545,73.2
+"17",17,"ODI # 4009","13 Jun 2018","Australia","The Oval",2,"218/7","won","Lost","Field","D/N","TRUE",6,3,2,24,21.4
+"18",18,"ODI # 4010","16 Jun 2018","Australia","Cardiff",1,"342/8","won","Lost","Bat","D/N","FALSE",6,3,2,33.2,29.1
+"19",19,"ODI # 4011","19 Jun 2018","Australia","Nottingham",1,"481/6","won","Lost","Bat","D/N","TRUE",6,3,2,57.75,25.4444444444444
+"20",20,"ODI # 4012","21 Jun 2018","Australia","Chester-le-Street",2,"314/4","won","Lost","Field","D/N","TRUE",6,3,2,51.6666666666667,38.375
+"21",21,"ODI # 4013","24 Jun 2018","Australia","Manchester",2,"208/9","won","Lost","Field","D/N","TRUE",6,3,2,17.8181818181818,25.25
+"22",22,"ODI # 4014","12 Jul 2018","India","Nottingham",1,"268","lost","Lost","Bat","D/N","TRUE",5,3,3,23.4545454545455,134.5
+"23",23,"ODI # 4016","14 Jul 2018","India","Lord's",1,"322/7","won","Won","Field","D/N","TRUE",5,3,3,39.5,23.4
+"24",24,"ODI # 4018","17 Jul 2018","India","Leeds",2,"260/2","won","Won","Field","D/N","TRUE",5,3,3,61.25,35.7142857142857
+"25",1,"ODI # 3791","7 Oct 2016","Bangladesh","Dhaka",1,"309/8","won","Won","Field","D/N","FALSE",4,3,3,33.6666666666667,31.4444444444444
+"26",2,"ODI # 3793","9 Oct 2016","Bangladesh","Dhaka",2,"204","lost","Won","Field","D/N","FALSE",4,3,3,17.3636363636364,33.4285714285714
+"27",3,"ODI # 3794","12 Oct 2016","Bangladesh","Chittagong",2,"278/6","won","Won","Field","D/N","FALSE",4,4,2,34,45
+"28",4,"ODI # 3819","15 Jan 2017","India","Pune",1,"350/7","lost","Lost","Bat","D/N","FALSE",5,3,3,36.4444444444444,50.1428571428571
+"29",5,"ODI # 3821","19 Jan 2017","India","Cuttack",2,"366/8","lost","Won","Field","D/N","FALSE",5,3,3,35.4,62.5
+"30",6,"ODI # 3824","22 Jan 2017","India","Kolkata",1,"321/8","won","Lost","Bat","D/N","FALSE",5,3,3,33.7777777777778,34.2222222222222
+"31",7,"ODI # 3845","3 Mar 2017","West Indies","North Sound",1,"296/6","won","Lost","Bat","D/N","FALSE",5,4,2,34.5,27.4444444444444
+"32",8,"ODI # 3848","5 Mar 2017","West Indies","North Sound",2,"226/6","won","Lost","Field","D/N","FALSE",5,4,2,27.625,24.6666666666667
+"33",9,"ODI # 3849","9 Mar 2017","West Indies","Bridgetown",1,"328","won","Lost","Bat","D/N","FALSE",5,4,2,28.6363636363636,13.7
+"34",10,"ODI # 3864","5 May 2017","Ireland","Bristol",2,"127/3","won","Lost","Field","D/N","TRUE",6,4,1,24.8,12.4
+"35",11,"ODI # 3865","7 May 2017","Ireland","Lord's",1,"328/6","won","Lost","Bat","D/N","TRUE",6,4,1,40,24.2
+"36",12,"ODI # 3872","24 May 2017","South Africa","Leeds",1,"339/6","won","Lost","Bat","D/N","TRUE",5,4,2,40.125,26.6
+"37",13,"ODI # 3873","27 May 2017","South Africa","Southampton",1,"330/6","won","Lost","Bat","D/N","TRUE",5,4,2,45,64.4
+"38",14,"ODI # 3874","29 May 2017","South Africa","Lord's",1,"153","lost","Lost","Bat","D/N","TRUE",6,4,1,13,51.6666666666667
+"39",15,"ODI # 3875","1 Jun 2017","Bangladesh","The Oval",2,"308/2","won","Won","Field","D/N","TRUE",5,4,2,76,50.5
+"40",16,"ODI # 3880","6 Jun 2017","New Zealand","Cardiff",1,"310","won","Lost","Bat","D/N","FALSE",5,4,2,26.7272727272727,21.1
+"41",17,"ODI # 3885","10 Jun 2017","Australia","Birmingham",2,"240/4","won","Won","Field","D/N","TRUE",5,4,2,39.5,29.8888888888889
+"42",18,"ODI # 3889","14 Jun 2017","Pakistan","Cardiff",1,"211","lost","Lost","Bat","D/N","FALSE",5,4,2,18.6363636363636,107
+"43",1,"ODI # 3707","11 Nov 2015","Pakistan","Abu Dhabi",1,"216","lost","Won","Field","D/N","FALSE",6,3,2,18.8181818181818,53.25
+"44",2,"ODI # 3708","13 Nov 2015","Pakistan","Abu Dhabi",1,"283/5","won","Won","Field","D/N","FALSE",6,3,2,39.5714285714286,17.3
+"45",3,"ODI # 3710","17 Nov 2015","Pakistan","Sharjah",2,"210/4","won","Lost","Field","D/N","FALSE",6,3,2,33.1666666666667,29.5714285714286
+"46",4,"ODI # 3712","20 Nov 2015","Pakistan","Dubai (DSC)",1,"355/5","won","Won","Field","D/N","N/A",6,3,2,48.8571428571429,29.8888888888889
+"47",5,"ODI # 3732","3 Feb 2016","South Africa","Bloemfontein",1,"399/9","won","Won","Field","D/N","FALSE",5,3,3,34.7272727272727,49
+"48",6,"ODI # 3734","6 Feb 2016","South Africa","Port Elizabeth",2,"263/5","won","Lost","Field","D/N","FALSE",5,3,3,35.5714285714286,36.2857142857143
+"49",7,"ODI # 3736","9 Feb 2016","South Africa","Centurion",1,"318/8","lost","Won","Field","D/N","FALSE",5,3,3,30.3,104.666666666667
+"50",8,"ODI # 3737","12 Feb 2016","South Africa","Johannesburg",1,"262","lost","Lost","Bat","D/N","FALSE",5,4,2,22.9090909090909,32.25
+"51",9,"ODI # 3738","14 Feb 2016","South Africa","Cape Town",1,"236","lost","Lost","Bat","D/N","FALSE",5,4,2,19.3636363636364,47.4
+"52",10,"ODI # 3751","21 Jun 2016","Sri Lanka","Nottingham",2,"286/8","tied","Won","Field","D/N","TRUE",6,3,2,27.9,40.5714285714286
+"53",11,"ODI # 3753","24 Jun 2016","Sri Lanka","Birmingham",2,"256/0","won","Lost","Field","D/N","TRUE",6,3,2,122.5,48
+"54",12,"ODI # 3755","26 Jun 2016","Sri Lanka","Bristol",2,"16/1","n/r","Won","Field","D/N","TRUE",6,4,1,5.33333333333333,30.5
+"55",13,"ODI # 3757","29 Jun 2016","Sri Lanka","The Oval",2,"309/4","won","Won","Field","D/N","TRUE",6,3,2,49.5,75.75
+"56",14,"ODI # 3758","2 Jul 2016","Sri Lanka","Cardiff",1,"324/7","won","Lost","Bat","D/N","FALSE",6,4,1,39.5,21.6666666666667
+"57",1,"ODI # 3554","26 Nov 2014","Sri Lanka","Colombo (RPS)",2,"292","lost","Won","Field","D/N","N/A",6,2,3,25.7272727272727,63
+"58",2,"ODI # 3557","29 Nov 2014","Sri Lanka","Colombo (RPS)",1,"185","lost","Won","Field","D/N","N/A",6,3,2,16.0909090909091,91.5
+"59",3,"ODI # 3561","3 Dec 2014","Sri Lanka","Hambantota",2,"236/5","won","Lost","Field","D/N",NA,6,3,2,32.7142857142857,29.875
+"60",4,"ODI # 3563","7 Dec 2014","Sri Lanka","Colombo (RPS)",1,"265","lost","Won","Field","D/N","N/A",6,3,2,23.4545454545455,64.75
+"61",5,"ODI # 3565","10 Dec 2014","Sri Lanka","Pallekele",2,"240/5","won","Won","Field","D/N",NA,6,3,2,33,23.5
+"62",6,"ODI # 3567","13 Dec 2014","Sri Lanka","Pallekele",2,"202","lost","Lost","Field","D/N",NA,6,3,2,18.1818181818182,39.7142857142857
+"63",7,"ODI # 3569","16 Dec 2014","Sri Lanka","Colombo (RPS)",2,"215","lost","Lost","Field","D/N","N/A",6,3,2,18.6363636363636,59.4
+"64",8,"ODI # 3578","16 Jan 2015","Australia","Sydney",1,"234","lost","Won","Field","D/N",NA,6,4,1,19.4545454545455,38
+"65",9,"ODI # 3586","20 Jan 2015","India","Brisbane",2,"156/1","won","Lost","Field","D/N",NA,6,4,1,50.6666666666667,15
+"66",10,"ODI # 3589","23 Jan 2015","Australia","Hobart",1,"303/8","lost","Lost","Bat","D/N",NA,6,4,1,32.5555555555556,50.1666666666667
+"67",11,"ODI # 3595","30 Jan 2015","India","Perth",2,"201/7","won","Won","Field","D/N",NA,6,4,1,21.3333333333333,19.8
+"68",12,"ODI # 3597","1 Feb 2015","Australia","Perth",2,"166","lost","Won","Field","D/N",NA,6,4,1,13.4545454545455,39.1428571428571
+"69",13,"ODI # 3600","14 Feb 2015","Australia","Melbourne",2,"231","lost","Won","Field","D/N",NA,6,4,1,19.5454545454545,42.5
+"70",14,"ODI # 3607","20 Feb 2015","New Zealand","Wellington",1,"123","lost","Won","Field","D/N",NA,6,4,1,10,60.5
+"71",15,"ODI # 3611","23 Feb 2015","Scotland","Christchurch",1,"303/8","won","Lost","Bat","D/N",NA,6,4,1,28.2,17.9
+"72",16,"ODI # 3619","1 Mar 2015","Sri Lanka","Wellington",1,"309/6","lost","Won","Field","D/N",NA,6,4,1,36.375,303
+"73",17,"ODI # 3630","9 Mar 2015","Bangladesh","Adelaide",2,"260","lost","Won","Field","D/N",NA,6,4,1,23.1818181818182,45
+"74",18,"ODI # 3635","13 Mar 2015","Afghanistan","Sydney",2,"101/1","won","Won","Field","D/N",NA,7,3,1,32.3333333333333,15
+"75",19,"ODI # 3650","8 May 2015","Ireland","Dublin (Malahide)",0,"DNB","n/r","Won","Field","D/N","N/A",0,0,0,0,18
+"76",20,"ODI # 3654","9 Jun 2015","New Zealand","Birmingham",1,"408/9","won","Lost","Bat","D/N",NA,6,4,1,36.3636363636364,20.8888888888889
+"77",21,"ODI # 3655","12 Jun 2015","New Zealand","The Oval",2,"365/9","lost","Lost","Field","D/N",NA,6,4,1,32.2727272727273,79
+"78",22,"ODI # 3656","14 Jun 2015","New Zealand","Southampton",1,"302","lost","Won","Field","D/N",NA,6,3,2,25.7272727272727,42.8571428571429
+"79",23,"ODI # 3657","17 Jun 2015","New Zealand","Nottingham",2,"350/3","won","Lost","Field","D/N",NA,6,3,2,68.6,49.5714285714286
+"80",24,"ODI # 3659","20 Jun 2015","New Zealand","Chester-le-Street",2,"192/7","won","Won","Field","D/N",NA,6,3,2,19.6666666666667,31.1111111111111
