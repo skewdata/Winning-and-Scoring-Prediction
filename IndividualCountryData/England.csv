@@ -1,0 +1,81 @@
+odi_id,date,oppositon,ground,innings,score,result,toss_result,strategy,match_timing,home_ground,total_batsmen,total_bowlers,total_allrounders,bat_bowl_avg.batting_avg,bat_bowl_avg.bowling_avg,TeamName
+ODI # 3911,19-Sep-17,West Indies,Manchester,2,210/3,won,Lost,Field,D/N,TRUE,5,3,3,41.2,22.33333333,England
+ODI # 3913,21-Sep-17,West Indies,Nottingham,1,21/0,n/r,Lost,Bat,D/N,TRUE,5,3,3,9.5,0,England
+ODI # 3915,24-Sep-17,West Indies,Bristol,1,369/9,won,Lost,Bat,D/N,TRUE,5,3,3,33,26.88888889,England
+ODI # 3916,27-Sep-17,West Indies,The Oval,2,258/5,won,Won,Field,D/N,TRUE,6,4,1,35.57142857,70.6,England
+ODI # 3918,29-Sep-17,West Indies,Southampton,2,294/1,won,Won,Field,D/N,TRUE,6,3,2,94.33333333,48,England
+ODI # 3951,14-Jan-18,Australia,Melbourne,2,308/5,won,Won,Field,D/N,FALSE,6,4,1,42.71428571,37.125,England
+ODI # 3958,19-Jan-18,Australia,Brisbane,2,274/6,won,Lost,Field,D/N,FALSE,6,4,1,33.5,38.28571429,England
+ODI # 3960,21-Jan-18,Australia,Sydney,1,302/6,won,Lost,Bat,D/N,FALSE,6,4,1,35.75,46.16666667,England
+ODI # 3966,26-Jan-18,Australia,Adelaide,1,196,lost,Lost,Bat,D/N,FALSE,6,3,2,17.36363636,32.83333333,England
+ODI # 3968,28-Jan-18,Australia,Perth,1,259,won,Lost,Bat,D/N,FALSE,6,2,3,22.27272727,26.66666667,England
+ODI # 3980,25-Feb-18,New Zealand,Hamilton,1,284/8,lost,Lost,Bat,D/N,FALSE,5,2,4,27.3,40.28571429,England
+ODI # 3981,28-Feb-18,New Zealand,Mount Maunganui,2,225/4,won,Won,Field,D/N,FALSE,5,2,4,35.83333333,36.33333333,England
+ODI # 3982,3-Mar-18,New Zealand,Wellington,1,234,won,Lost,Bat,D/N,FALSE,5,3,3,20.27272727,32.71428571,England
+ODI # 3989,7-Mar-18,New Zealand,Dunedin,1,335/9,lost,Lost,Bat,D/N,FALSE,5,3,3,30,67,England
+ODI # 3992,10-Mar-18,New Zealand,Christchurch,2,229/3,won,Won,Field,D/N,FALSE,5,3,3,44.4,22.3,England
+ODI # 4008,10-Jun-18,Scotland,Edinburgh,2,365,lost,Won,Field,D/N,FALSE,6,3,2,32.54545455,73.2,England
+ODI # 4009,13-Jun-18,Australia,The Oval,2,218/7,won,Lost,Field,D/N,TRUE,6,3,2,24,21.4,England
+ODI # 4010,16-Jun-18,Australia,Cardiff,1,342/8,won,Lost,Bat,D/N,FALSE,6,3,2,33.2,29.1,England
+ODI # 4011,19-Jun-18,Australia,Nottingham,1,481/6,won,Lost,Bat,D/N,TRUE,6,3,2,57.75,25.44444444,England
+ODI # 4012,21-Jun-18,Australia,Chester-le-Street,2,314/4,won,Lost,Field,D/N,TRUE,6,3,2,51.66666667,38.375,England
+ODI # 4013,24-Jun-18,Australia,Manchester,2,208/9,won,Lost,Field,D/N,TRUE,6,3,2,17.81818182,25.25,England
+ODI # 4014,12-Jul-18,India,Nottingham,1,268,lost,Lost,Bat,D/N,TRUE,5,3,3,23.45454545,134.5,England
+ODI # 4016,14-Jul-18,India,Lord's,1,322/7,won,Won,Field,D/N,TRUE,5,3,3,39.5,23.4,England
+ODI # 4018,17-Jul-18,India,Leeds,2,260/2,won,Won,Field,D/N,TRUE,5,3,3,61.25,35.71428571,England
+ODI # 3791,7-Oct-16,Bangladesh,Dhaka,1,309/8,won,Won,Field,D/N,FALSE,4,3,3,33.66666667,31.44444444,England
+ODI # 3793,9-Oct-16,Bangladesh,Dhaka,2,204,lost,Won,Field,D/N,FALSE,4,3,3,17.36363636,33.42857143,England
+ODI # 3794,12-Oct-16,Bangladesh,Chittagong,2,278/6,won,Won,Field,D/N,FALSE,4,4,2,34,45,England
+ODI # 3819,15-Jan-17,India,Pune,1,350/7,lost,Lost,Bat,D/N,FALSE,5,3,3,36.44444444,50.14285714,England
+ODI # 3821,19-Jan-17,India,Cuttack,2,366/8,lost,Won,Field,D/N,FALSE,5,3,3,35.4,62.5,England
+ODI # 3824,22-Jan-17,India,Kolkata,1,321/8,won,Lost,Bat,D/N,FALSE,5,3,3,33.77777778,34.22222222,England
+ODI # 3845,3-Mar-17,West Indies,North Sound,1,296/6,won,Lost,Bat,D/N,FALSE,5,4,2,34.5,27.44444444,England
+ODI # 3848,5-Mar-17,West Indies,North Sound,2,226/6,won,Lost,Field,D/N,FALSE,5,4,2,27.625,24.66666667,England
+ODI # 3849,9-Mar-17,West Indies,Bridgetown,1,328,won,Lost,Bat,D/N,FALSE,5,4,2,28.63636364,13.7,England
+ODI # 3864,5-May-17,Ireland,Bristol,2,127/3,won,Lost,Field,D/N,TRUE,6,4,1,24.8,12.4,England
+ODI # 3865,7-May-17,Ireland,Lord's,1,328/6,won,Lost,Bat,D/N,TRUE,6,4,1,40,24.2,England
+ODI # 3872,24-May-17,South Africa,Leeds,1,339/6,won,Lost,Bat,D/N,TRUE,5,4,2,40.125,26.6,England
+ODI # 3873,27-May-17,South Africa,Southampton,1,330/6,won,Lost,Bat,D/N,TRUE,5,4,2,45,64.4,England
+ODI # 3874,29-May-17,South Africa,Lord's,1,153,lost,Lost,Bat,D/N,TRUE,6,4,1,13,51.66666667,England
+ODI # 3875,1-Jun-17,Bangladesh,The Oval,2,308/2,won,Won,Field,D/N,TRUE,5,4,2,76,50.5,England
+ODI # 3880,6-Jun-17,New Zealand,Cardiff,1,310,won,Lost,Bat,D/N,FALSE,5,4,2,26.72727273,21.1,England
+ODI # 3885,10-Jun-17,Australia,Birmingham,2,240/4,won,Won,Field,D/N,TRUE,5,4,2,39.5,29.88888889,England
+ODI # 3889,14-Jun-17,Pakistan,Cardiff,1,211,lost,Lost,Bat,D/N,FALSE,5,4,2,18.63636364,107,England
+ODI # 3707,11-Nov-15,Pakistan,Abu Dhabi,1,216,lost,Won,Field,D/N,FALSE,6,3,2,18.81818182,53.25,England
+ODI # 3708,13-Nov-15,Pakistan,Abu Dhabi,1,283/5,won,Won,Field,D/N,FALSE,6,3,2,39.57142857,17.3,England
+ODI # 3710,17-Nov-15,Pakistan,Sharjah,2,210/4,won,Lost,Field,D/N,FALSE,6,3,2,33.16666667,29.57142857,England
+ODI # 3712,20-Nov-15,Pakistan,Dubai (DSC),1,355/5,won,Won,Field,D/N,N/A,6,3,2,48.85714286,29.88888889,England
+ODI # 3732,3-Feb-16,South Africa,Bloemfontein,1,399/9,won,Won,Field,D/N,FALSE,5,3,3,34.72727273,49,England
+ODI # 3734,6-Feb-16,South Africa,Port Elizabeth,2,263/5,won,Lost,Field,D/N,FALSE,5,3,3,35.57142857,36.28571429,England
+ODI # 3736,9-Feb-16,South Africa,Centurion,1,318/8,lost,Won,Field,D/N,FALSE,5,3,3,30.3,104.6666667,England
+ODI # 3737,12-Feb-16,South Africa,Johannesburg,1,262,lost,Lost,Bat,D/N,FALSE,5,4,2,22.90909091,32.25,England
+ODI # 3738,14-Feb-16,South Africa,Cape Town,1,236,lost,Lost,Bat,D/N,FALSE,5,4,2,19.36363636,47.4,England
+ODI # 3751,21-Jun-16,Sri Lanka,Nottingham,2,286/8,tied,Won,Field,D/N,TRUE,6,3,2,27.9,40.57142857,England
+ODI # 3753,24-Jun-16,Sri Lanka,Birmingham,2,256/0,won,Lost,Field,D/N,TRUE,6,3,2,122.5,48,England
+ODI # 3755,26-Jun-16,Sri Lanka,Bristol,2,16/1,n/r,Won,Field,D/N,TRUE,6,4,1,5.333333333,30.5,England
+ODI # 3757,29-Jun-16,Sri Lanka,The Oval,2,309/4,won,Won,Field,D/N,TRUE,6,3,2,49.5,75.75,England
+ODI # 3758,2-Jul-16,Sri Lanka,Cardiff,1,324/7,won,Lost,Bat,D/N,FALSE,6,4,1,39.5,21.66666667,England
+ODI # 3554,26-Nov-14,Sri Lanka,Colombo (RPS),2,292,lost,Won,Field,D/N,N/A,6,2,3,25.72727273,63,England
+ODI # 3557,29-Nov-14,Sri Lanka,Colombo (RPS),1,185,lost,Won,Field,D/N,N/A,6,3,2,16.09090909,91.5,England
+ODI # 3561,3-Dec-14,Sri Lanka,Hambantota,2,236/5,won,Lost,Field,D/N,NA,6,3,2,32.71428571,29.875,England
+ODI # 3563,7-Dec-14,Sri Lanka,Colombo (RPS),1,265,lost,Won,Field,D/N,N/A,6,3,2,23.45454545,64.75,England
+ODI # 3565,10-Dec-14,Sri Lanka,Pallekele,2,240/5,won,Won,Field,D/N,NA,6,3,2,33,23.5,England
+ODI # 3567,13-Dec-14,Sri Lanka,Pallekele,2,202,lost,Lost,Field,D/N,NA,6,3,2,18.18181818,39.71428571,England
+ODI # 3569,16-Dec-14,Sri Lanka,Colombo (RPS),2,215,lost,Lost,Field,D/N,N/A,6,3,2,18.63636364,59.4,England
+ODI # 3578,16-Jan-15,Australia,Sydney,1,234,lost,Won,Field,D/N,NA,6,4,1,19.45454545,38,England
+ODI # 3586,20-Jan-15,India,Brisbane,2,156/1,won,Lost,Field,D/N,NA,6,4,1,50.66666667,15,England
+ODI # 3589,23-Jan-15,Australia,Hobart,1,303/8,lost,Lost,Bat,D/N,NA,6,4,1,32.55555556,50.16666667,England
+ODI # 3595,30-Jan-15,India,Perth,2,201/7,won,Won,Field,D/N,NA,6,4,1,21.33333333,19.8,England
+ODI # 3597,1-Feb-15,Australia,Perth,2,166,lost,Won,Field,D/N,NA,6,4,1,13.45454545,39.14285714,England
+ODI # 3600,14-Feb-15,Australia,Melbourne,2,231,lost,Won,Field,D/N,NA,6,4,1,19.54545455,42.5,England
+ODI # 3607,20-Feb-15,New Zealand,Wellington,1,123,lost,Won,Field,D/N,NA,6,4,1,10,60.5,England
+ODI # 3611,23-Feb-15,Scotland,Christchurch,1,303/8,won,Lost,Bat,D/N,NA,6,4,1,28.2,17.9,England
+ODI # 3619,1-Mar-15,Sri Lanka,Wellington,1,309/6,lost,Won,Field,D/N,NA,6,4,1,36.375,303,England
+ODI # 3630,9-Mar-15,Bangladesh,Adelaide,2,260,lost,Won,Field,D/N,NA,6,4,1,23.18181818,45,England
+ODI # 3635,13-Mar-15,Afghanistan,Sydney,2,101/1,won,Won,Field,D/N,NA,7,3,1,32.33333333,15,England
+ODI # 3650,8-May-15,Ireland,Dublin (Malahide),0,DNB,n/r,Won,Field,D/N,N/A,0,0,0,0,18,England
+ODI # 3654,9-Jun-15,New Zealand,Birmingham,1,408/9,won,Lost,Bat,D/N,NA,6,4,1,36.36363636,20.88888889,England
+ODI # 3655,12-Jun-15,New Zealand,The Oval,2,365/9,lost,Lost,Field,D/N,NA,6,4,1,32.27272727,79,England
+ODI # 3656,14-Jun-15,New Zealand,Southampton,1,302,lost,Won,Field,D/N,NA,6,3,2,25.72727273,42.85714286,England
+ODI # 3657,17-Jun-15,New Zealand,Nottingham,2,350/3,won,Lost,Field,D/N,NA,6,3,2,68.6,49.57142857,England
+ODI # 3659,20-Jun-15,New Zealand,Chester-le-Street,2,192/7,won,Won,Field,D/N,NA,6,3,2,19.66666667,31.11111111,England

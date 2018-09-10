@@ -1,5 +1,5 @@
 # contains all utility functions
-
+setwd('D:/DataScienceWorkspace/R-Workspace/ShinyCricket')
 library(xml2)
 library(rvest)
 library(stringr)
@@ -7,6 +7,8 @@ library(dplyr)
 library(RCurl)
 library(jsonlite)
 library(data.table)
+library(shiny)
+library(textclean)
 source("GetWeather.R")
 
 
@@ -17,6 +19,8 @@ player_roles <- data.frame("player_id" = character(0), "player_role" = character
 
 
 get_player_id <- function(player_name){
+  player_name <- replace_non_ascii(player_name)
+  print('entered get player id ')
   query_name <- gsub(" ","+",player_name)
   query_url <- gsub("<<key>>",query_name,search_url)
   players <- read_html(query_url)%>%html_nodes('div#gurusearch_player table tr')
@@ -35,7 +39,7 @@ get_player_id <- function(player_name){
 get_team_id <- function(team_name){
   temp_team_ids <- read.csv("team_ids.csv")
   temp_team_id <- temp_team_ids%>%filter(Team == team_name)%>%select(Id)
-  # print(temp_team_id)
+  print(temp_team_id)
 }
 
 get_host_name_from_id <- function(host_id){
@@ -63,6 +67,7 @@ get_stadiums_in_country <-function(country){
 
 
 scrap_match_data <- function(team_name,match_link,odi_id,venue){
+  print("Entered Scrap match data")
   test_url = match_link
   html <- read_html(test_url)
   model <- data.frame()
@@ -78,8 +83,11 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
 
   # # Toss Details
   toss_data <- html%>%html_nodes('div.match-detail-container div.match-detail--item')%>%.[2]%>%html_node('div.match-detail--right')%>%html_text()
+  print(toss_data)
   team <- strsplit(toss_data," , ")[[1]][1]
+  print(team)
   strategy <- strsplit(toss_data," , ")[[1]][2]
+  print(strategy)
   if(team!= team_name){
     toss_result = "Lost"
   }
@@ -100,10 +108,15 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
   # Venue Details (home ground or not)
   # venue_details <- html%>%html_nodes('div.match-detail-container div.stadium-details a span')%>%html_text()
   venue_details <- venue
-  # print(venue_details)
+  print("printing venue details")
+  print(venue_details)
   if(grepl(',',venue_details)){
     venue_location <- strsplit(venue_details,", ")[[1]][1] # Querying by stadium name
+    print("printing venue location")
+    print(venue_location)
     stadium_country <- get_stadium_county(venue_location)
+    print("printing stadium country")
+    print(stadium_country)
     if(length(stadium_country)== 0){
       venue_location <- strsplit(venue_details,", ")[[1]][2] # Querying by stadium city
       stadium_country <- get_stadium_county(venue_location)
@@ -118,7 +131,9 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
     }
   }else{
     venue_location <- venue_details
+    print(paste('venue details ',venue_location))
     stadium_country <- get_stadium_county(venue_location)
+    print(paste('stadium country ',stadium_country))
   }
   # 
   # #print(venue_location)
@@ -137,7 +152,7 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
   
   # 
   # 
-  # #print(home_ground)
+  print(home_ground)
   # 
   #Match Timings
   if(grepl("D/N",as.character(html))){
@@ -146,7 +161,9 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
     match_timing = "D"
   }
   # 
-  # #print(match_timing)
+  print(match_timing)
+  print(team_name)
+  print(test_url)
   curr_team_squad <- get_squad(team_name = team_name,match_url = test_url)
   # #opp_team_squad <- get_squad(team_name = opposition,match_url = test_url)
   # 
@@ -155,6 +172,7 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
   total_bowlers <- 0;
   total_allrounders <- 0;
   for(player in curr_team_squad){
+    print(player)
     this_player_id <- get_player_id(player)
     role <- get_player_role(this_player_id)
     if(grepl("batsman",role,ignore.case = TRUE) || grepl("wicket",role,ignore.case = TRUE)){
@@ -165,15 +183,17 @@ scrap_match_data <- function(team_name,match_link,odi_id,venue){
       total_bowlers = total_bowlers + 1
     }
   }
+  print('out of loop')
   # # #team_name,opposition,toss_result,strategy,match_timing,home_ground,stadium_country , ,total_batsmen,total_bowlers,total_allrounders,bat_bowl_avg$batting_avg,bat_bowl_avg$bowling_avg
   bat_bowl_avg <- get_bat_bowl_avg(team_name,test_url)   # ,match_timing,home_ground,stadium_country,total_batsmen,total_bowlers,total_allrounders,bat_bowl_avg$batting_avg,bat_bowl_avg$bowling_avg
   model <- rbind(model,data.frame(odi_id,toss_result,strategy,match_timing,home_ground,total_batsmen,total_bowlers,total_allrounders,bat_bowl_avg$batting_avg,bat_bowl_avg$bowling_avg))
+  print('left scrap match data')
   return(model)
 }
 #scrap_match_data("India","http://stats.espncricinfo.com/ci/engine/match/1007649.html")
 
 get_stadium_county <- function(venue_location){
-  #print(venue_location)
+  print(venue_location)
   if(nrow(venue_data%>%filter(str_detect(Location,venue_location))) == 0){
     country <- venue_data%>%filter(str_detect(Name,venue_location))%>%select(Country)%>%pull()%>%droplevels()
   }else{
@@ -185,6 +205,7 @@ get_stadium_county <- function(venue_location){
 # get_stadium_county()
 
 get_squad <- function(team_name,match_url){
+  print('entered get squad')
   html <-read_html(match_url)
   article_html <- html%>%html_nodes('article.sub-module.scorecard')
   squad <- c()
@@ -218,7 +239,9 @@ get_squad <- function(team_name,match_url){
     }
     final_squad <- c(final_squad,trimws(player))
   }
+  print('left get squad')
   return(final_squad)
+  
 }
 
 #get_squad("India","http://stats.espncricinfo.com/ci/engine/match/1007649.html")
@@ -298,6 +321,8 @@ main <- function(team,range_start_str,range_end_str,file_name){
   team_stats_url <-  gsub("<<str_date>>",range_start_str,team_stats_url)
   team_stats_url <-  gsub("<<end_date>>",range_end_str,team_stats_url)
   team_data <- data.frame()
+  print(team_stats_url)
+  Sys.sleep(2)
   team_result_html <- read_html(team_stats_url)
   matches <- team_result_html%>%html_nodes('table.engineTable')%>%.[4]%>%html_nodes('tbody tr')
   index <- 1 
@@ -313,12 +338,18 @@ main <- function(team,range_start_str,range_end_str,file_name){
     link <- match%>%html_nodes('td')%>%.[11]%>%html_node('a')%>%html_attr("href")
     link <- paste("http://stats.espncricinfo.com",link,sep="")
     match_info <- data.frame(date,oppositon,ground,innings,score,result,odi_id)
+    print(paste("PassA " , index))
+    print(team)
+    print(link)
+    print(odi_id)
+    print(ground)
     match_data <- scrap_match_data(team,link,odi_id,ground)
     team_data <- rbind(team_data,merge(match_info,match_data))
     print(paste("Done with match# ",index,sep = ""))
     index <- index +1
     #team_data <- cbind(team_data,match_data)
-    #print(team_data)
+    print(team_data)
+    print(paste("PassB ", index))
   }
   write.csv(team_data,file = file_name)
   print(paste("successfully created file: ",file_name,sep = ""))
@@ -350,7 +381,8 @@ scrap <- function(country_name){
     file.remove(actual_file)
   }
   for (i in 1:5){
-    curr_date = Sys.Date() ### yyyy-mm-dd
+    try(
+    {curr_date = Sys.Date() ### yyyy-mm-dd
     range_start <- Sys.Date() - 365*(i-1)
     range_start_year <- strsplit(as.character(range_start),"-")[[1]][1]
     range_start_str <- paste(strsplit(as.character(range_start),"-")[[1]][3],paste(month.abb[as.numeric(strsplit(as.character(range_start),"-")[[1]][2])],strsplit(as.character(range_start),"-")[[1]][1],sep = "+"),sep = "+")
@@ -368,12 +400,11 @@ scrap <- function(country_name){
     }
     print(paste("creating file: ",file_name,sep = ""))
     main(country_name,range_start_str,range_end_str,file_name)
-    merge_data(actual_file,file_name)
-    
+    merge_data(actual_file,file_name)}, silent = TRUE)
   }
 }
 
-scrap("India")
+
 #main("India")
 
 #merging all the data
@@ -397,4 +428,17 @@ scrap("India")
 
 
 
+countryVector <- c("India","Australia","England", "South Africa", "Sri Lanka", "West Indies","Zimbabwe","Afghanistan","Hong Kong","Ireland","Papua New Guinea","Scotland","UAE")
 
+for(i in countryVector)
+{
+  try(
+  {
+    file.remove("2014_2013.csv")
+    file.remove("2015_2014.csv")
+    file.remove("2016_2015.csv")
+    file.remove("2017_2016.csv")
+    file.remove("2018_2017.csv")
+    scrap(i)
+  },silent = TRUE)
+}
